@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Login.css";
 
 const LoginPage = () => {
@@ -8,6 +9,7 @@ const LoginPage = () => {
   const [password, setPassword] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
+  const navigate = useNavigate()
 
   const toggleForm = () => {
     setIsLogin(!isLogin);
@@ -30,6 +32,7 @@ const LoginPage = () => {
       );
       if (user) {
         setMessage("Login successful!");
+        navigate("/home")
       } else {
         setMessage("Invalid credentials.");
       }
