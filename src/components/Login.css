@@ -1,0 +1,122 @@
+/* Import Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+/* General Styles */
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #4f69df, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    background-image: url("https://st3.depositphotos.com/1194063/17936/i/450/depositphotos_179364540-stock-photo-herbs-and-spices-on-black.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* Form Box - Glassmorphic Effect */
+.form-box {
+    background: rgba(214, 45, 45, 0.0);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 2rem;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.0);
+    text-align: center;
+    width: 20rem;
+    border: 2px solid rgba(236, 83, 83, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.form-box:hover {
+    transform: scale(1.02);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 6px;
+    font-size: 16px;
+    background: rgba(167, 4, 4, 0.2);
+    color: white;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.input-field::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.input-field:focus {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: white;
+}
+
+
+.btn, .toggle-btn {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+.btn {
+    background: #ff7eb3;
+    color: white;
+}
+
+.btn:hover {
+    background: #ff4f8a;
+}
+
+
+.toggle-btn {
+    background: transparent;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.toggle-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+.message {
+    margin-top: 10px;
+    color: #ff4f8a;
+    font-weight: bold;
+}
+
+@media (max-width: 400px) {
+    .form-box {
+        width: 90%;
+        padding: 20px;
+    }
+}
